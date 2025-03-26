@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+    
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(4, 25, 43, 0.788);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    padding: 20px 50px;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    height: 80px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    background: linear-gradient(45deg, #ff0080, #ffbf00, #00aaff);
+    color: #000;
+}
+
+.shows {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.show {
+    background: rgba(4, 25, 43, 0.788);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    min-width: 300px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+body {
+font-family: 'Poppins', sans-serif;
+background-image: url('balada 1.jpg');
+background-size: cover;
+background-position: center;
+color: white;
+text-align: center;
+overflow: hidden;
+}
+
+
+.container {
+max-width: 2000px;
+margin: 0 auto;
+background: rgba(4, 25, 43, 0.788);
+padding: 20px;
+border-radius: 15px;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+/* backdrop-filter: blur(10px); */
+background-attachment: fixed;
+justify-content: center;
+align-items: center;
+margin-top: 50px;
+}
+
+h1 {
+font-size: 28px;
+font-weight: 600;
+margin-bottom: 20px;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.shows {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+
+.show {
+background: rgba(255, 255, 255, 0.2);
+padding: 15px;
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+text-align: center;
+/* width: 30%; */
+transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+border: 3px solid transparent;
+}
+
+.show:nth-child(1) {
+border-color: #ff4081;
+}
+
+.show:nth-child(2) {
+border-color: #2196f3;
+}
+
+.show:nth-child(3) {
+border-color: #ffeb3b;
+}
+
+.show:hover {
+transform: translateY(-5px);
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.show img {
+width: 450px;
+border-radius: 10px;
+box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.show h2 {
+font-size: 20px;
+margin: 10px 0;
+text-transform: uppercase;
+}
+
+.show:nth-child(1) h2 {
+color: #ff4081;
+}
+
+.show:nth-child(2) h2 {
+color: #2196f3;
+}
+
+.show:nth-child(3) h2 {
+color: #ffeb3b;
+}
+
+.show p {
+color: white;
+font-size: 14px;
+font-weight: 300;
+}
+
+.shows a {
+text-decoration: none;
+}
+
+@media (max-width: 768px) {
+.shows {
+    flex-direction: column;
+    align-items: center;
+}
+
+.show {
+    width: 90%;
+}
+}

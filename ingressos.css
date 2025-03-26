@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('balada 1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(4, 25, 43, 0.788);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    padding: 20px 50px;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    height: 80px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    background: linear-gradient(45deg, #ff0080, #ffbf00, #00aaff);
+    color: #000;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(4, 25, 43, 0.788);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Title */
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    color: #ffeb3b;
+}
+
+/* Ticket Form */
+.ticket-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+select, input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    margin-bottom: 15px;
+}
+
+input[type="number"], input[type="text"], input[type="email"] {
+    max-width: 400px;
+}
+
+button {
+    background: linear-gradient(45deg, #ff0080, #ffbf00, #00aaff);
+    color: #000;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #ff4081;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .ticket-form {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    select, input {
+        max-width: 100%;
+    }
+}
