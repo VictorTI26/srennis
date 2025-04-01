@@ -56,18 +56,18 @@
 
 
 body {
-font-family: 'Poppins', sans-serif;
-background-image: url('balada 1.jpg');
-background-size: cover;
-background-position: center;
-color: white;
-text-align: center;
-overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('balada 1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
 }
 
 
 .container {
-max-width: 2000px;
+max-width: 1700px;
 margin: 0 auto;
 background: rgba(4, 25, 43, 0.788);
 padding: 20px;

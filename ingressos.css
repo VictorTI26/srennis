@@ -98,6 +98,11 @@ select, input {
     margin-bottom: 15px;
 }
 
+#evento option {
+    color: black;
+    background-color: white;
+}
+
 input[type="number"], input[type="text"], input[type="email"] {
     max-width: 400px;
 }

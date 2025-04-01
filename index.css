@@ -1,3 +1,13 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('balada 1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
 .header {
     display: flex;
     justify-content: space-between;

@@ -1,0 +1,159 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('balada 1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(4, 25, 43, 0.788);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    padding: 20px 50px;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    height: 80px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    background: linear-gradient(45deg, #ff0080, #ffbf00, #00aaff);
+    color: #000;
+}
+
+.container {
+    max-width: 1700px;
+    margin: 0 auto;
+    background: rgba(4, 25, 43, 0.788);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    /* backdrop-filter: blur(10px); */
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 70vh;
+    }
+
+    .shows {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    
+    .show {
+        width: 400px; /* Ajusta o tamanho dos cards */
+        background: rgba(255, 255, 255, 0.2);
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        border: 3px solid transparent;
+    }
+    
+    .show:nth-child(1) {
+        border-color: #ff4081;
+    }
+    
+    .show:nth-child(2) {
+        border-color: #2196f3;
+    }
+    
+    .show:nth-child(3) {
+        border-color: #ffeb3b;
+    }
+    
+    .show:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    }
+    
+    .show img {
+        width: 100%; /* Garante que a imagem ocupe toda a largura do card */
+        height: 250px; /* Altura fixa para manter a proporção */
+        object-fit: cover; /* Garante que a imagem fique bem ajustada */
+        border-radius: 10px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .show h2 {
+        font-size: 18px;
+        margin: 10px 0;
+        text-transform: uppercase;
+    }
+    
+    .show:nth-child(1) {
+        border: 4px solid #ff4081;
+        padding: 10px; /* Para criar um espaçamento entre a borda e a imagem */
+    }
+    
+    .show:nth-child(2) {
+        border: 4px solid #2196f3;
+        padding: 10px;
+    }
+    
+    .show:nth-child(3) {
+        border: 4px solid #ffeb3b;
+        padding: 10px;
+    }
+    
+    .show:nth-child(4) {
+        border: 4px solid #4caf50;
+        padding: 10px;
+    }
+    
+    .show:nth-child(5) {
+        border: 4px solid #ff9800;
+        padding: 10px;
+    }
+    
+    .show:nth-child(6) {
+        border: 4px solid #9c27b0;
+        padding: 10px;
+    }
+    
+    
+    
+    .show p {
+        color: white;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    
+    /* Responsividade */
+    @media (max-width: 1024px) {
+        .shows {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        .show {
+            width: 90%;
+        }
+    }
+    
