@@ -1,31 +1,33 @@
+/* Importaç a fonte Poppins*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* Body */
+/* Estilização do corpo da página */
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url('balada 1.jpg');
-    background-size: cover;
+    background-image: url('../assets/balada\ 1.jpg'); 
+    background-size: cover; 
     background-position: center;
     color: white;
     text-align: center;
-    overflow: hidden;
+    overflow: auto;
 }
 
-/* Header */
+/* Cabeçalho - Header */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(4, 25, 43, 0.788);
+    background: rgba(4, 25, 43, 0.788); 
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
     padding: 20px 50px;
-    font-family: Arial, sans-serif;
 }
 
+/* Logo do evento */
 .logo {
     height: 80px;
 }
 
+/* Navegação */
 .nav {
     display: flex;
     gap: 30px;
@@ -45,36 +47,33 @@ body {
     color: #000;
 }
 
-/* Container */
+/* Container principal */
 .container {
     max-width: 900px;
-    margin: 0 auto;
-    background: rgba(4, 25, 43, 0.788);
+    margin: 50px auto; /* Centraliza e dá espaçamento superior */
+    background: rgba(4, 25, 43, 0.9);
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    background-attachment: fixed;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
 }
 
-/* Title */
+/* Título principal */
 h1 {
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     color: #ffeb3b;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Ticket Form */
+/* Estilos do formulário de compra */
 .ticket-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
+/* Grupos de campos do formulário */
 .form-group {
     display: flex;
     flex-direction: column;
@@ -84,9 +83,9 @@ h1 {
 label {
     font-size: 18px;
     margin-bottom: 5px;
-    color: white;
 }
 
+/* Campos de entrada e seleção */
 select, input {
     padding: 10px;
     font-size: 16px;
@@ -107,6 +106,7 @@ input[type="number"], input[type="text"], input[type="email"] {
     max-width: 400px;
 }
 
+/* Botão de finalizar compra */
 button {
     background: linear-gradient(45deg, #ff0080, #ffbf00, #00aaff);
     color: #000;
@@ -116,13 +116,26 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
+    display: block;
+    margin: 20px auto; 
 }
 
 button:hover {
     background: #ff4081;
 }
 
-/* Mobile responsiveness */
+/* Layout das colunas do formulário */
+.form-columns {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.column {
+    width: 48%;
+}
+
+/* Responsividade para telas menores */
 @media (max-width: 768px) {
     .ticket-form {
         width: 100%;
@@ -135,5 +148,14 @@ button:hover {
 
     select, input {
         max-width: 100%;
+    }
+
+    .form-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 100%;
     }
 }

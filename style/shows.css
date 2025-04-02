@@ -57,12 +57,12 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url('balada 1.jpg');
+    background-image: url('../assets/balada\ 1.jpg');
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    overflow: hidden;
+    overflow: auto;
 }
 
 

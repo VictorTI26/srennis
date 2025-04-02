@@ -1,27 +1,34 @@
+/* Importa a fonte Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilização do corpo da página */
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url('balada 1.jpg');
+    background-image: url('../assets/balada\ 1.jpg'); 
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    overflow: hidden;
+    overflow: auto;
 }
 
+/* Cabeçalho - Header */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(4, 25, 43, 0.788);
+    background: rgba(4, 25, 43, 0.788); /* Fundo escuro translúcido */
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
     padding: 20px 50px;
     font-family: Arial, sans-serif;
 }
 
+/* Logo do evento */
 .logo {
     height: 80px;
 }
 
+/* Navegação */
 .nav {
     display: flex;
     gap: 30px;
@@ -41,21 +48,44 @@ body {
     color: #000;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('balada 1.jpg');
-    background-size: cover;
-    text-align: center;
-    color: white;
-    overflow: hidden;
-}
-
+/* Estilização do título */
 h1 {
     font-size: 60px;
     font-weight: bold;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
 }
 
+/* Seção de informações do evento */
+.content-infos {
+    margin: 60px 90px;
+    background: rgba(4, 25, 43, 0.788);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Seção principal do conteúdo */
+.content {
+    padding: 50px;
+    max-width: 1200px;
+    color: white;
+    margin: 50px auto;
+    display: flex;
+    gap: 60px;
+}
+
+/* Estilização das informações sobre o evento */
+.info {
+    color: #ff0095;
+    font-weight: bold;
+}
+
+/* Ajuste para o logo no menu */
+.logo-menu {
+    width: 300px;
+    height: auto;
+}
+
+/* Botões do menu */
 .menu {
     margin-top: 50px;
 }
@@ -70,35 +100,10 @@ h1 {
     color: black;
     border-radius: 10px;
     font-size: 18px;
+    transition: 0.3s;
 }
 
 .menu a:hover {
     background: #333;
     color: white;
-}
-
-.content {
-    padding: 50px;
-    max-width: 1200px;
-    color: white;
-    margin: 50px auto;
-    display: flex;
-    gap: 60px;
-}
-
-.content-infos {
-    margin-top: 60px; 
-    margin-inline: 90px;
-    background: rgba(4, 25, 43, 0.788);
-    color: white;
-    border-radius: 10px;
-}
-
-.info {
-    color: #ff0095;
-}
-
-.logo-menu{
-    width: 300px; 
-    height: auto; 
 }
